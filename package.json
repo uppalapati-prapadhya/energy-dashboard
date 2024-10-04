@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd energy-dashboard && npm run build",
+    "client": "cd energy-dashboard && npm start",
+    "heroku-postbuild": "cd energy-dashboard && npm install && npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "path": "^0.12.7",
+    "twilio": "^5.3.3"
+  }
+}
